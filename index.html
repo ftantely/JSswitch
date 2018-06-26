@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+<title>Title</title>
+</head>
+<body>
+
+
+
+
+<button onclick="myFunction()">What day is it?</button>
+
+<p id="2"></p>
+
+
+
+<script>
+
+    function myFunction() {
+        var jour= new Date().getDay()
+        var day;
+        switch (jour) {
+            case 0:
+            day = "Sunday";
+            break;
+            case 1:
+            day = "Monday";
+            break;
+
+            case 2:
+            day = "Tuesday";
+            break;
+
+            case 3:
+            day = "Wednesday";
+
+        }
+
+        document.getElementById("2").innerHTML="It's "+ day;
+
+    }
+
+
+
+</script>
+</body>
+</html>
